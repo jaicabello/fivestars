@@ -1,0 +1,39 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"FiveStarsPlugin\"><param name=\"ios-package\" value=\"FiveStarsPlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-fivestarsplugin": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-fivestarsplugin.FiveStarsPlugin",
+      "file": "plugins/cordova-plugin-fivestarsplugin/www/FiveStarsPlugin.js",
+      "pluginId": "cordova-plugin-fivestarsplugin",
+      "clobbers": [
+        "cordova.plugins.FiveStarsPlugin"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-fivestarsplugin": "0.0.1"
+  }
+}
